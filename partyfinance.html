@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picnic and Park Party Finance</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #eef5ff;
+            background-image: url('background.jpg'); /* Latar belakang dengan gambar dari Unsplash */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparansi pada latar belakang */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .party-title {
+        font-family: 'Monoton', sans-serif;
+        color: #428bca;
+        margin-bottom: 30px;
+        text-align: center;
+         font-weight: 700; /* Menambahkan tebal pada font */
+}
+        .party-details {
+            text-align: left;
+            padding: 20px;
+            background-color: #d6e9ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .party-details p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin: 10px 0;
+        }
+        .party-details p strong {
+            display: block;
+            font-size: 1.4rem;
+            color: #5b9bd5;
+        }
+        .images {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .images img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .banner {
+            background-color: #5b9bd5;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .banner:hover {
+            background-color: #428bca;
+            transform: scale(1.05);
+        }
+        .banner h2 {
+            margin: 0;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .decorative-element {
+            width: 100px;
+            height: 100px;
+            background-color: #d6e9ff;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .decorative-element.top-left {
+            top: -50px;
+            left: -50px;
+        }
+        .decorative-element.bottom-right {
+            bottom: -50px;
+            right: -50px;
+        }
+        .logo-placeholder {
+            width: 50px;
+            height: 50px;
+            background-color: #5b9bd5;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        /* Animasi masuk untuk judul */
+        .party-title h1 {
+            animation: fadeInUp 1s ease;
+        }
+        /* Efek kalender dan lokasi */
+        .logo-placeholder:before {
+            font-family: 'Font Awesome 5 Free';
+            color: #5b9bd5;
+            margin-right: 5px;
+        }
+        .logo-placeholder.location:before {
+            content: '\f041'; /* Ikon lokasi */
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorative-element top-left"></div>
+        <div class="decorative-element bottom-right"></div>
+        <div class="logo">
+            <img src="budayaland.jpg" alt="Logo Tempat Party">
+        </div>
+        <div class="party-title">
+            <h1 class="display-4">Picnic and Park Party Finance</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="party-details">
+                    <p>
+                        <strong><span class="logo-placeholder location"></span>Date:</strong> Saturday, 8 June 2024
+                    </p>
+                    <p>
+                        <strong><span class="logo-placeholder location"></span>Location:</strong> BudayaLand, Tanjung Morawa City
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="images">
+                    <img src="tempat.jpg" alt="Tempat Party" style="max-height: 300px;">
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h2>Join us at picnic and park party !!</h2>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
